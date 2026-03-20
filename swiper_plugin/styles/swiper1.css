@@ -1,0 +1,95 @@
+header {
+    height: 60px;
+    position: fixed; left: 0; top:0;
+    z-index: 100;
+    width: 100%;
+    background-color: rgba(255,255,255,0.3);
+}
+header nav {
+    padding-right: 60px;
+    float: right;
+}
+header nav a{display: inline-block; line-height: 60px; margin-left: 20px;}
+#wrap {
+    min-width: 1800px;
+    height: 100vh;
+}
+#wrap .swiper-wrapper {}
+#wrap .swiper-wrapper .swiper-slide {}
+#wrap .swiper-wrapper .swiper-slide h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+    margin: 60px 0;
+}
+#wrap .swiper-wrapper .intro {
+    background: linear-gradient(#eee, #aaa);
+}
+#wrap .swiper-wrapper .profile {
+    background: #222;
+}
+#wrap .swiper-wrapper .project1 {
+    background: linear-gradient(#eee, #aaa);
+}
+#wrap .swiper-wrapper .project2 {
+    background-color: #fff;
+}
+/* 프로젝트슬라이드 */
+#wrap .swiper-wrapper .project1 .group {
+    position: relative;
+    width:max-content;
+    margin: 0 auto;
+}
+#wrap .swiper-wrapper .project1 .group .web {
+    width: 600px; height: 400px;
+    /* overflow: visible; */ /* hidden내장 */
+}
+#wrap .swiper-wrapper .project1 .group .web .swiper-wrapper {}
+#wrap .swiper-wrapper .project1 .group .web .swiper-wrapper .slide1 {background-color: aquamarine;}
+#wrap .swiper-wrapper .project1 .group .web .swiper-wrapper .slide2 {background-color: beige;}
+#wrap .swiper-wrapper .project1 .group .web .swiper-wrapper .slide3 {background-color: pink;}
+#wrap .swiper-wrapper .project1 .group .web .swiper-wrapper .slide4 {background-color: skyblue;}
+#wrap .swiper-wrapper .project1 .group .web .swiper-wrapper .slide5 {background-color: orange;}
+#wrap .swiper-wrapper .project1 .group .web .swiper-wrapper .slide6 {background-color: rgb(230, 255, 163);}
+#wrap .swiper-wrapper .project1 .group .web + .web_page {
+    /* background-color: yellow; */
+    /* transform: scale(1.5); */
+    /* absolute (기본내장) */
+    left: -40px; bottom: 0; text-align: left;
+}
+#wrap .swiper-wrapper .project1 .group .web .web_page .swiper-pagination-total {
+    /* background-color: red; */
+    color: #fff;
+}
+#wrap .swiper-wrapper .project1 .group .web .web_page .swiper-pagination-current {
+    /* background-color: red; */
+    color: #f00;
+}
+#wrap .swiper-wrapper .project1 .group .web .web_page #text {background-color: #fff;}
+.top {
+    display: inline-block;
+    width: 50px; height: 50px;
+    background-color: #222;
+    position: fixed;
+    right: 60px; bottom: 40px;
+    z-index: 1000;
+    border-radius: 50%; 
+    text-align: center;
+    line-height: 50px;
+    box-shadow: 0 0 10px rgba(255,255,255,0.5);
+}
+.top a {color: #fff;}
+#wrap .swiper-wrapper .project2 .g_group {
+    position: relative; width: max-content; margin: 0 auto;
+}
+#wrap .swiper-wrapper .project2 .g_group .g_page {
+    top:-30px; bottom: auto;
+}
+#wrap .swiper-wrapper .project2 .g_group #graphic_wrap {
+    width: 600px; height: 400px;
+}
+#wrap .swiper-wrapper .project2 .g_group #graphic_wrap .swiper-wrapper .swiper-slide {}
+#wrap .swiper-wrapper .project2 .g_group #graphic_wrap .swiper-wrapper .g_slide1{background-color: yellowgreen;}
+#wrap .swiper-wrapper .project2 .g_group #graphic_wrap .swiper-wrapper .g_slide2{background-color: rgb(123, 222, 230);}
+#wrap .swiper-wrapper .project2 .g_group #graphic_wrap .swiper-wrapper .g_slide3{background-color: rgb(184, 61, 241);}
+#wrap .swiper-wrapper .project2 .g_group #graphic_wrap .swiper-wrapper .g_slide4{background-color: rgb(248, 146, 50);}
